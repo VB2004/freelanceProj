@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1B008A;
+}
+
+li, a, button{
+    font-family: sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+header{
+    background-color: #1B008A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.logo{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.nav{
+    margin-right: 30px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.fa-brands{
+    border: whitesmoke 2px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #1B008A;
+    color: rgba(94, 255, 62, 1);
+}
+
+.contactus:hover > .fa-brands{
+    color: rgba(94, 255, 62, 0.7);
+}
+
+.introvid{
+    color: whitesmoke;
+    background-color: #191919;
+    height: 500px;
+}
