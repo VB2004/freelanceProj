@@ -104,7 +104,7 @@ header{
 
 .about-us{
     text-align: center;
-    padding: 20px 15px;
+    padding: 50px 15px;
     color: whitesmoke;
 }
 
@@ -114,6 +114,16 @@ header{
     background-repeat: no-repeat;
     width: 100%;
     height: 800px;
-    max-height: 80%;
+    margin: 60px 0 0 0;
+}
+
+.type-of-travel{
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-around;
     max-width: 100%;
+}
+
+.type-of-travel img{
+    width: fit-content;
 }
