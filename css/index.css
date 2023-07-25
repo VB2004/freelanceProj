@@ -36,11 +36,7 @@ header{
     font-size: 30px;
 }
 
-/*
-.nav{
-    margin-right: 30px;
-}
-*/
+
 .nav_links{
     list-style: none;
     display: flex;
@@ -112,14 +108,21 @@ header{
 }
 
 .pic1{
-    background-image: url("../resources/hills.jpg");
-    overflow: hidden;
-    margin: 60px 0 0 0;
-    background-repeat: no-repeat;
-    border: none;
-    height: 800px;
-}
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    width: 100%;
+    height: 1000px;
 
+}
+.pic1-item1 {
+    background-image: url("../resources/hills.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
 
 /* .type-of-travel{
     background-color: white;
@@ -132,49 +135,33 @@ header{
 } */
 
 .tot-outer{
-    height: 400px;
+    height: 364px;
+    background-color: white;
+    padding-left: 30px;
 }
 
-.tot-grid{
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 4;
-    width: 100%;
+
+.tot-grid {
+    padding: 20px 0;
+    display: flex;
+    background-color: white;
+    width:  100%;
     height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tot-grid-item
+{
+    width: 25%;
+    background-color: white;
 }
 
-.tot-grid-item1 {
-    width: 25%;
-    background-image: url("../resources/for-families.png");
-    background-size: cover;
-    background-position: center;
-    grid-column: 1/4;
-    grid-row: 1/1;
-  }
-  
-  .tot-grid-item2 {
-    background-image: url("../resources/for-couples.png");
-    background-size: cover;
-    background-position: center;
-    grid-column: 2/4;
-    grid-row: 1/1;
-  }
-  
-  .tot-grid-item3 {
-    background-image: url("../resources/for-friends.png");
-    background-size: cover;
-    background-position: center;
-    grid-column: 3/4;
-    grid-row: 1/1;
-  }
-  
-  .tot-grid-item4 {
-    background-image: url("../resources/for-solotrips.png");
-    background-size: cover;
-    background-position: center;
-    grid-column: 4/4;
-    grid-row: 1/1;
-  }
+.tot-grid-item:hover{
+    transform: scale(1.08);
+    transition: transform linear 300ms;
+}
 
 .reg-btn-outer{
     padding-top: 50px;
@@ -204,13 +191,14 @@ header{
 }
 
 .outer-grid{
-    height: 1000px;
+    height: 1600px;
     margin: 0;
 }
 
 .grid{
-    background-color: whitesmoke;
+    background-color: white;
     display: grid;
+    padding: 0 7.5rem;
     grid-template-columns: 2;
     grid-template-rows: 2;
     width: 100%;
@@ -218,36 +206,57 @@ header{
 }
 
 .grid-item1 {
-  background-image: url("../resources/spain.jpg");
+  background-image: url("../resources/spain1.png");
   background-size: cover;
+  font-size: xx-large;
+  color: white;
   background-position: center;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
 .grid-item2 {
-  background-image: url("../resources/dubai.jpg");
+  background-image: url("../resources/dubai1.png");
   background-size: cover;
+  font-size: xx-large;
+  color: white;
   background-position: center;
   grid-column: 2/2;
   grid-row: 1/2;
 }
 
 .grid-item3 {
-  background-image: url("../resources/usa.jpg");
+  background-image: url("../resources/usa1.png");
   background-size: cover;
+  font-size: xx-large;
+  color: white;
   background-position: center;
   grid-column: 1/2;
   grid-row: 2/2;
 }
 
 .grid-item4 {
-  background-image: url("../resources/germany.jpg");
+  background-image: url("../resources/germany1.png");
   background-size: cover;
+  font-size: xx-large;
+  color: white;
   background-position: center;
   grid-column: 2/2;
   grid-row: 2/2;
 }
+.grid-item1:hover, 
+.grid-item2:hover,
+.grid-item3:hover,
+.grid-item4:hover{
+    transform: scale(1.02);
+    transition: transform linear 300ms;
+    
+}
+/* .grid-item-text{
+    background-color: transparent;
+    font-size: 60px;
+    padding: 30% 0 0 0  ;
+} */
 
 .txt2{
     font-size: 30px;
@@ -257,11 +266,19 @@ header{
 }
 
 .pic2{
+    background-image: url("../resources/dashboard\ new-02.png");
+    background-repeat: no-repeat;
     background-color: white;
     display: flex;
+    background-size: cover;
     justify-content: center;
+    width: 100%;
+    height: 900px;
     padding-bottom: 30px;
 }
+
+
+
 .text3{
     display: flex;
     flex-direction: column;
