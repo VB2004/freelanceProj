@@ -1,8 +1,14 @@
+@font-face {
+    font-family: myFont;
+    src: url("../resources/fonts/911porschav3bold.ttf");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #21245E;
+    font-family: myFont;
 }
 
 html {
@@ -13,8 +19,8 @@ li,
 a,
 button {
     font-family: sans-serif;
-    font-weight: 500px;
-    font-size: 20px;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
     color: whitesmoke;
     text-decoration: none;
 }
@@ -34,12 +40,12 @@ header {
     color: whitesmoke;
     cursor: pointer;
     margin-right: auto;
-    padding: 10px 5px;
-    font-size: 30px;
+    padding: 0.625rem 0.3125rem;
+    font-size: 1.875rem;
 }
 
 .nav-right{
-    padding-left: 200px;
+    padding-left: 12.5rem;
 }
 
 
@@ -47,13 +53,13 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px;
-    font-size: 25   px;
+    padding: 1.25rem;
+    font-size: 1.56rem;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .nav_links li a {
@@ -65,7 +71,7 @@ header {
 }
 
 .fa-brands {
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     background-color: #21245E;
     color: rgba(94, 255, 62, 1);
 }
@@ -74,13 +80,13 @@ header {
     color: rgba(94, 255, 62, 0.7);
 }
 
-.introvid {
+/* .introvid {
     color: whitesmoke;
     background-color: #191919;
-    /* height: 600px; */
+    height: 600px;
     text-align: center;
-    /* font-size: 70px; */
-    /* margin: 0; */
+    font-size: 70px;
+    margin: 0;
 }
 
 .introvid video {
@@ -89,11 +95,59 @@ header {
     height :80%;
     background-size: cover;
     background-position: center;
+} */
+.section1 {
+    position: relative;
+    /* width: 100%; */
+    height: 62.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .section1-txt0{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Cookie";
+    /* padding: 20px;
+    margin: 15px; */
+    background-color: transparent;
+    opacity: 0.7;
+    z-index: 1;
+    color: whitesmoke;
+  }
+  
+.txt0,.reg-btn2-outer{
+    background-color: transparent;
+}
+
+.video-container0 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.mute{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    background-color: transparent;
+    margin: 0 3rem 3rem 0;
+    border: none;
+}
+
+.fa-volume-high, .fa-volume-xmark{
+    background-color: transparent;
+    visibility: visible;
 }
 
 .aboutus {
     padding: 1.5%;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .paras1 {
@@ -107,16 +161,17 @@ header {
 
 .p1,
 .p2 {
-    font-size: 21px;
+    font-family: sans-serif;
+    font-size: 1.3125rem;
 }
 
 .p2 {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .about-us {
     text-align: center;
-    padding: 50px 15px;
+    padding: 3.125rem 0.9375rem;
     color: whitesmoke;
 }
 
@@ -126,7 +181,7 @@ header {
     grid-template-columns: 1;
     grid-template-rows: 1;
     width: 100%;
-    height: 1000px;
+    height: 62.5rem;
 
 }
 
@@ -156,7 +211,7 @@ header {
 
 
 .tot-grid {
-    padding: 20px 0;
+    padding: 1.25rem 0;
     display: flex;
     background-color: white;
     width: 100%;
@@ -170,7 +225,7 @@ header {
 .tot-grid-item {
     width: 20%;
     background-color: white;
-    margin: 5px;
+    margin: 0.3125rem;
 }
 .tot-grid-item img{
     width: 100%;
@@ -182,27 +237,27 @@ header {
 }
 
 .reg-btn-outer {
-    padding-top: 50px;
+    padding-top: 3.125rem;
     background-color: white;
     text-align: center;
 }
 
 .reg-btn {
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.25rem;
 }
 
 .fav-dest {
     background-color: white;
-    padding: 30px;
+    padding: 1.875rem;
     color: #21245E;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 
 .fav-dest h2 {
-    margin: 20px;
-    padding-bottom: 30px;
+    margin: 1.25rem;
+    padding-bottom: 1.875rem;
     color: #21245E;
     background-color: white;
     font-size: xx-large;
@@ -279,9 +334,9 @@ header {
 } */
 
 .txt2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
-    padding: 30px 0 40px 0;
+    padding: 1.875rem 0 2.5rem 0;
     background-color: white;
 }
 
@@ -311,32 +366,39 @@ header {
 } */
 
 .reg-btn2-outer {
-    margin: 25px;
+    margin: 1.5625rem;
 }
 
 .reg-btn2 {
     color: #191919;
-    background-color: transparent;
-    padding: 15px 25px;
+    background-color: white;
+    padding: 0.9375rem 1.5625rem;
     border-radius: 25px;
 }
 
 .reg-btn2:hover{
     background-color: whitesmoke;
+    color: rgb(86, 86, 86);
 }
 
+
 footer {
+    font-family: sans-serif;
     font-size: large;
     font-weight: 300;
     color: white;
-    padding: 30px 0px;
+    padding: 1.875rem 0px;
     text-align: center;
+}
+
+footer p small{
+    font-family: sans-serif;
 }
 
 .section {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 62.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,9 +408,7 @@ footer {
   .section-txt3{
     text-align: center;
     font-size: 2rem;
-    font-family: "Cookie";
-    /* padding: 20px;
-    margin: 15px; */
+    color: white;
     background-color: transparent;
     opacity: 0.7;
     z-index: 1;
@@ -363,14 +423,4 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-  }
-  
-  .color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: lightblue;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
   }

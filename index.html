@@ -6,6 +6,7 @@
     <title>CarTourism</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/index.js"></script>
 
 </head>
 <body>
@@ -24,10 +25,27 @@
         </nav>
     </header>
 
-    <div class="introvid">
+    <!-- <div class="introvid">
         <video controls autoplay loop muted  controlslist="nodownload, nofullscreen">
             <source src="/resources/vid1.1.mp4" type="">
         </video>
+    </div> -->
+    <div class="section1">
+       <div class="section1-txt0">
+            <div class="txt0">When was the last time you felt<br>this alive!</div>
+            <div class="reg-btn2-outer">
+                <a class="reg-btn2" href="#">Register Your Interest</a>
+            </div>
+       </div>
+        <div class="video-container0">
+            <video class="video1" muted autoplay loop id="myVideo" class="video">
+                <source src="/resources/vid1.MOV">
+            </video>
+        </div>
+        
+        <button class="mute control-button" onclick="mute()">
+            <i id="mtbtn" class="fa-solid fa-volume-xmark fa-xl"></i>
+        </button>
     </div>
     <div class="about-us" id="abtus">
         <!-- About Us -->
@@ -99,8 +117,6 @@
         </video>
     </div> -->
     <div class="section">
-
-        <!-- <h1>WHAT ARE YOU STILL DOING BEHIND A SCREEN?<br>YOU CAN BE HERE!</h1> -->
        <div class="section-txt3">
             <div class="txt3">WHAT ARE YOU STILL DOING BEHIND A SCREEN?<br>YOU CAN BE HERE!</div>
             <div class="reg-btn2-outer">
