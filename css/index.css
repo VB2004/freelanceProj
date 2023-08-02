@@ -25,49 +25,62 @@ button {
     text-decoration: none;
 }
 
-header {
+.navbar{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    color: white;
+    padding: 1rem;
     background-color: #21245E;
-    padding: 1rem 5%;
 }
 
-.logo {
+.brand-title{
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.nav_links{
+    height: 100%;
+}
+
+.nav_links ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    text-align: center;
-    justify-content: space-around;
-    color: whitesmoke;
-    cursor: pointer;
-    margin-right: auto;
-    padding: 0.625rem 0.3125rem;
-    font-size: 1.875rem;
 }
 
-.nav-right{
-    padding-left: 12.5rem;
-}
-
-
-.nav_links {
+.nav_links li{
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1.25rem;
-    font-size: 1.56rem;
+    padding: 1rem;
 }
 
-.nav_links li {
-    display: inline-block;
-    padding: 0 1.25rem;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
+.nav_links li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 .nav_links li a:hover {
     color: #0088a9;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .fa-brands {
@@ -176,22 +189,26 @@ width: 100%;
 }
 
 .pic1 {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
     width: 100%;
-    height: 62.5rem;
-
-}
-
-.pic1-item1 {
+    height: 62.5rem; */
     background-image: url("../resources/hills.jpg");
+    width: 100%;
+    padding-top: 50.25%;
     background-size: cover;
     background-position: center;
-    grid-column: 1/1;
-    grid-row: 1/1;
 }
+
+/* .pic1-item1 {
+    background-image: url("../resources/hills.jpg");
+    width: 100%;
+    padding-top: 50.25%;
+    background-size: cover;
+    background-position: center;
+} */
 
 /* .type-of-travel{
     background-color: white;
@@ -219,13 +236,14 @@ width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     align-items:center;
-    justify-content:space-around;
+    justify-content: center;
 }
 
 .tot-grid-item {
-    width: 20%;
+    min-width: 20%;
+    width: 10%;
     background-color: white;
-    margin: 0.3125rem;
+    /* margin: 0.3125rem; */
 }
 .tot-grid-item img{
     width: 100%;
@@ -423,4 +441,99 @@ footer p small{
     top: 0;
     left: 0;
     width: 100%;
-  }
+}
+
+@media screen and (max-width:1000px){
+    .outer-grid{
+        height: 100em;
+    }
+    .grid {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+    
+    .grid-item1 {
+        background-image: url("../resources/spain1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex:100%
+    }
+    
+    .grid-item2 {
+        background-image: url("../resources/dubai1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex:100%
+    }
+    
+    .grid-item3 {
+        background-image: url("../resources/usa1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex:100%
+    }
+    
+    .grid-item4 {
+        background-image: url("../resources/germany1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex:100%
+    }
+    .grid-item1:hover,
+    .grid-item2:hover,
+    .grid-item3:hover,
+    .grid-item4:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1561px){
+    .tot-grid{
+        justify-content: space-around;
+    }
+    .tot-grid-item {
+        min-width: 20%;
+        background-color: white;
+    }
+    .tot-grid-item:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:900px){
+    .toggle-button{
+        margin-top: 0.8rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav_links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav_links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav_links ul li {
+        text-align: center;
+    }
+
+    .nav_links ul li a {
+        padding: 0 1rem;
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+}

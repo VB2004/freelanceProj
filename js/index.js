@@ -1,3 +1,8 @@
+function toggle(){
+    var navbarLinks = document.getElementById('nav_links');
+    navbarLinks.classList.toggle('active');
+}
+
 function mute() {
     var video = document.getElementById("myVideo");
 
